@@ -1,8 +1,5 @@
-body {
+body{
 	font-family: 'Roboto', sans-serif;
-	/*background-image: url(img/code-institute.jpg);
- 	background-size: cover;
- 	color: #ffffff;*/
  	background-color: #eee;
 }
 
@@ -10,25 +7,22 @@ h1{
 	font-size: 3em;
 	text-align: center;
 }
-
-h2 {
+h2{
 	font-size: 1em;
 	text-align: left;
 }
-
-p {
+p{
 	font-size: .9rem;
 }
 
-div {
+div{
 	border-radius: 4px;
 }
 
-.card_image {
+.card_image{
 	width: 100%;
 }
-
-.bottom_button {
+.bottom_button{
 	display: flex;
 	box-sizing:border-box;
 	border-radius: 4px;
@@ -39,22 +33,23 @@ div {
 	padding: 1em .75em;
 	text-decoration: none;
 	color: #fff;
+
 }
 
-.card_bottom {
+.card_bottom{
 	display: flex;
 	flex-flow:column;
 }
-
-.card_head {
+.card_head{
 	flex:0;
 }
-
-.card_para {
+.card_para{
 	flex:1 0 auto;
+	display: none;
 }
 
-#container {
+#container
+{
 	display: flex;		/* makes container a flexbox*/
 	flex-flow: row wrap; 	/* layout the boxes in rows and wrap them*/
 	box-sizing:border-box;
@@ -62,107 +57,93 @@ div {
 	margin-left:auto;
 	max-width:1050px;	
 }
-
-#logo {
+#logo{
 	width: 800px;
 	margin: auto;
 }
 
-.card {
-	flex:1; /* */
+.card{
+	flex:1; /* sets equal width to cards*/
 	display: flex;	/* make the contents controllable by flexbox*/
-	flex-flow:column;	/* */
-	min-width: 240px; /**/
+	flex-flow:column;	/* sets as a column layout*/
+	min-width: 240px; 
 	margin: 10px;
 	padding: 20px;
 	background-color: #fff;
 }
 
-.card-highlight{
-	background-color: rgb(235, 82, 85);
+.pink{
+    background-color:rgba(255, 192, 203,.85);
 }
 
-.highlight_stream {
+/*will set stream backround colour when used in jquery function*/
+.highlight_stream{
 	background-color: #EB5255;
 }
 
-.highlight_blue {
-	color: lightblue;
-}
-
-.background_black{
-	color: black;
-}
-#my_footer {
+#my_footer{
 	width:100%;
 	text-align: center;
 }
-
-#copyright {
+#copyright{
 	margin-top:10px;
 	margin-bottom:10px;
+
 }
 
 /*************************
 Navigation
 **************************/
 
-nav {
+nav{
 	font-family: roboto;
 	background-color: #eee;
 	margin: 30px auto;
 	width: 100%;
 }
-
-ul {
-	display: flex;
+ul{
+	display: flex;/*creates a flew container*/
 	justify-content:space-between;
 	flex-flow: row;
-	/*flex-flow: row-reverse;*/
-	/*justify-content:flex-end;*/
-	/*justify-content:space-around;*/
-	/*align-items:flex-start;*/
 	align-items:baseline;
 	border-radius: 10px;
 	list-style-type: none; /*Remove Bullets*/
 	padding: 0;	
 }
-
-li {
-	flex:1;
+li{
+	flex:1;/*assigns width to list items*/
 	height: 30px;
-	/*width:10%;*/
-	/*border:2px solid #000;*/
-	/*background-color: #81BBC9;*/
-	/*border-radius: 10px;*/
-	font-family: Dosis;
 	padding:20px 20px 20px 20px;
 	text-align: center;
 	font-size: 1.3em;
 }
 
-#logoNav {
-	flex:6;
+#logoNav{
+	flex:6;/*assigns larger size to the logo*/
 	text-align: left;
 	font-size: 2em;
 	font-weight: bold;
 }
-
-.underline {
-    text-decoration:underline;
+/*underlines text*/
+.underline{
+  text-decoration:underline;
+}
+/*adds border*/
+.border{
+  border: solid 5px #ccc;
 }
 
-.border {
-    border: solid 5px #ccc;
+/*adds background-color pink*/
+.highlight{
+  background-color: pink;
 }
 
-@media screen and (max-width: 700px) {
-	ul {
+@media screen and (max-width: 700px){
+	ul{
 		flex-flow: column;
 		align-items:center;
-    }
-    
-	li {
+	}
+	li{
 		font-size: 2em;
 	}
 }
